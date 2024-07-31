@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: orange;
+    padding: 16px;
+}
+
+
+h1 {
+    color: #fff;
+}
+
+.li-container  {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 8px;
+}
+
+.li-container a {
+    text-decoration: none;
+    color: #fff;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+.logo-container  {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    
+}
+
+.logo-container img {
+    width: 500px;
+    height: auto;
+}
+
+
+.text h2 {
+    margin-bottom: 3rem;
+    border-bottom: solid 1px #ffa500;
+    padding: 1rem;
+}
+
+section {
+    margin-bottom: 5rem;
+}
+
+
+section h2 {
+    border-bottom: solid 1px #ffa500;
+    padding: 1rem;
+    margin-bottom: 58px;
+}
+
+.produtos-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.produtos {
+    text-align: center;
+    width: 100%;
+    margin: 20px;
+}
+
+.produtos img {
+    width: 100%;
+    height: 200px;
+}
+
+.produtos h3 {
+    margin-top: 1rem;
+}
+
+.produtos p {
+    margin-top: 10px;
+}
+
+
+.produtos button {
+    width: 100%;
+    background-color: #ffa500;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: 0.7s;
+}
+
+.produtos button:hover{
+    background-color: #00bfff;
+}
+
+
+@media  screen and (min-width: 641px) and (max-width: 1023px) {
+    .logo-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-container img {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .text h2 {
+        font-size: 1.2rem;
+    }
+
+    .text p {
+        font-size: 1rem;
+    }
+
+    .produtos-container {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+    
+    .produtos {
+        width: 90%;
+        max-width: 300px;
+        margin:  0 auto;
+    }
+
+}
+
+@media screen and (max-width: 640px)  {
+    header {
+        width: 100%;
+        
+    }
+
+    h1 {
+        line-height: 50px;
+        font-size: 1.5rem;
+    }
+    
+
+    .li-container  {
+        display: block;
+    
+        
+    }
+
+    .logo-container {
+        display: block;
+        align-items: center;
+    }
+
+    .logo-container img {
+        width: 100%;
+    }
+
+    
+
+    .produtos-container {
+        display: block;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .produtos {
+        margin: 0 auto;
+        padding: 16px;
+        max-width: 100%;
+    }
+}
+
+
